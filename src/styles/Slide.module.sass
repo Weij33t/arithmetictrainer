@@ -1,5 +1,4 @@
-@import '../../variables.sass'
-
+@import './variables.sass'
 
 .SlideContainer
   width: 25vw
@@ -7,12 +6,17 @@
   border-radius: 5px
   background: $slideBackground
 
-.SlideContainer.train
-  height: 375px
+.SlideContainer.main
+  width: 400px
+
 
 .SlideInner 
   height: 100%
-
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
 .SlideContent 
   height: 82%
   display: flex
@@ -27,6 +31,8 @@
   grid-template-rows: 100px 100px
   align-content: center
 
+
+
 .SlideTitle 
   width: fit-content
   margin: 0 auto
@@ -34,19 +40,3 @@
   border-radius: 2px
   text-align: center
   font-size: $titleFz
-
-.SlideButton 
-  width: 190px
-  background: none
-  cursor: pointer
-  padding: 10px 15px
-  border: 2px solid $orange
-  outline: none
-  box-shadow: 0px 0px 4px 1px $orange
-  font-size: $btnFz
-  transition: 0.1s all
-  &:hover 
-    background: $mainBackground
-    border-color: $mainBackground
-    box-shadow: 0px 0px 4px 2px $mainBackground
-    color: $btnHoverColor
