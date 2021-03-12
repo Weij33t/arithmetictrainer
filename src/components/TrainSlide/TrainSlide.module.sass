@@ -1,0 +1,45 @@
+@import '../../styles/variables.sass'
+
+.More 
+  border-radius: 50%
+  padding: 4px 10px
+  position: absolute
+  top: 7px
+  right: 5px
+
+.Hint 
+  padding: 15px 
+  background: $slideBackground
+  box-shadow: 0px 0px 6px 1px $mainBackground
+  display: none
+  
+.Container 
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-content: space-around
+
+.Tasks 
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 10px
+
+.Task 
+  width: 100%
+  margin: 15px 0
+  box-shadow: 0px 0px 10px 4px $mainBackground
+  padding: 20px
+  font-size: 23px
+
+
+.Unanswered, .Incorrect
+  box-shadow: 0px 0px 13px 2px red
+  div:nth-child(2) span
+    color: red
+
+.Correct
+  box-shadow: 0px 0px 13px 2px green
+  div:nth-child(2) span
+    color: green
